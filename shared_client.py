@@ -8,12 +8,12 @@ from pyrogram import Client
 import sys
 
 client = TelegramClient("telethonbot", API_ID, API_HASH)
-app = Client("pyrogrambot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
-userbot = Client("4gbbot", api_id=API_ID, api_hash=API_HASH, session_string=STRING)
+app = Client("pyrogrambot", api_id=27581835, api_hash=184a11c9b4af04d78d4c1c181781498b, bot_token= 8074485587:AAFxiOkQb4NJpoc-3HTWy3lN-EGiHUXxzjU)
+userbot = Client("4gbbot", api_id=27581835, api_hash=184a11c9b4af04d78d4c1c181781498b, session_string=STRING)
 
 async def start_client():
     if not client.is_connected():
-        await client.start(bot_token=BOT_TOKEN)
+        await client.start(bot_token=8074485587:AAFxiOkQb4NJpoc-3HTWy3lN-EGiHUXxzjU)
         print("SpyLib started...")
     if STRING:
         try:
@@ -25,4 +25,5 @@ async def start_client():
     await app.start()
     print("Pyro App Started...")
     return client, app, userbot
+
 
